@@ -14,7 +14,7 @@ class Entrypoint
         return;
       }
       const data = fs.readFileSync('data.txt', 'utf8')
-      const arr = data.replace(new RegExp("\n", "ig"), " ").split(" ")
+      const arr = data.replace(new RegExp("\n", "ig"), "x").split("x")
       solution.solve(arr);
     }
     else
